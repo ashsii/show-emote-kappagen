@@ -110,6 +110,9 @@ class Twi {
       for (let i = 0; i < message.emotes.length; i++) {
         spawnEmote(message.emotes[i]);
       }
+      if (message.content.startsWith("New 7TV emote")) {
+        location.reload();
+      }
     });
   }
 
