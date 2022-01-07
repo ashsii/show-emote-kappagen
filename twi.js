@@ -109,9 +109,11 @@ class Twi {
 //       }
       for (let i = 0; i < message.emotes.length; i++) {
         spawnEmote(message.emotes[i]);
+        console.log("emote")
       }
       if (message.content.startsWith("New")) {
         window.location.reload();
+        console.log("new detected")
       }
     });
   }
