@@ -31,6 +31,10 @@ function spawnEmote(emote) {
 
   moveRandom(sprite);
   document.getElementById("app").appendChild(sprite);
+  
+  setTimeout(() => {
+          document.getElementById("app").removeChild(sprite);
+   }, 1000 * 5);
 }
 
 twi.addCommand("", (message, _args) => {
