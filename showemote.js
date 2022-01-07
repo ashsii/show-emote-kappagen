@@ -38,20 +38,21 @@ function spawnEmote(emote) {
 }
 
 twi.addCommand("", (message, _args) => {
-  const nodelay = window.location.search.includes('sosat');
-  console.log("hello " + nodelay)
-  message.emotes.some(emote => {
+//   const nodelay = window.location.search.includes('sosat');
+//   console.log("hello " + nodelay)
+//   message.emotes.some(emote => {
   
-    if (emote && (!showing || nodelay)) {
-      spawnEmote(emote);
-      showing = true;
-      setTimeout(() => {
-        showing = false;
-        document.getElementById("app").innerHTML = "";
-      }, 1000 * 4);
-    }
+//     if (emote && (!showing || nodelay)) {
+//       spawnEmote(emote);
+//       showing = true;
+//       setTimeout(() => {
+//         showing = false;
+//         document.getElementById("app").innerHTML = "";
+//       }, 1000 * 4);
+//     }
     
-    return !nodelay;
+//     return !nodelay;
   
-  })
+//   })
+    return false
 });
