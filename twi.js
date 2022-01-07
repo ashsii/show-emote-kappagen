@@ -12,10 +12,8 @@ class Twi {
   }
 
   runCommand(commandName, ...args) {
-    const command = this.commands.get(commandName);
-    if (command) {
-      command(...args);
-    }
+    entries().next()(...args);
+    console.log('catch');
   }
 
   emit(eventName, ...args) {
@@ -101,12 +99,16 @@ class Twi {
     this.chat.connect().catch(console.error);
   }
 
-  useCommands(prefix = "!") {
+  useCommands(prefix = "") {
     this.on("message", (message) => {
-      if (message.content.startsWith(prefix)) {
-        const args = message.content.split(" ");
-        const command = args.shift().split(prefix)[1];
-        this.runCommand(command, message, args);
+      const emote = message.emotes[0];
+      if (emote && !showing) {
+        spawnEmote(emote);
+        showing = true;
+        setTimeout(() => {
+          showing = false;
+          document.getElementById("app").innerHTML = "";
+        }, 1000 * 5);
       }
     });
   }
