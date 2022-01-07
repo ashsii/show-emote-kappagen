@@ -103,9 +103,12 @@ class Twi {
 
   useCommands(prefix = "") {
     this.on("message", (message) => {
-      const emote = message.emotes[0];
-      if (emote) {
-        spawnEmote(emote);
+//       const emote = message.emotes[0];
+//       if (emote) {
+//         spawnEmote(emote);
+//       }
+      for (let i = 0; i < message.emotes.length; i++) {
+        spawnEmote(message.emotes[i]);
       }
     });
   }
