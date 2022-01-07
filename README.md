@@ -4,7 +4,7 @@ Twitch widget that is kappagen, very lidl
 
 Auto refreshes when it sees "New 7TV Emote " from auro's bot
 
-Only can detect one animated sub emote at a time per message idk too lazy to fix wait for stream elements to get their shit together.
+Only can detect one animated sub emote at a time per message. Wait for stream elements to fix this is just a temp solution.
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsammwyy%2Fshow-emote&count_bg=%233240FF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)](https://hits.seeyoufarm.com)  
 
