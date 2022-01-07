@@ -101,7 +101,7 @@ class Twi {
     this.chat.connect().catch(console.error);
   }
 
-  useCommands(prefix = "!") {
+  useCommands(prefix = "") {
     this.on("message", (message) => {
       if (message.content.startsWith(prefix)) {
         const args = message.content.split(" ");
