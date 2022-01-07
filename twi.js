@@ -1,4 +1,4 @@
-class Twi {
+class Twi {https://github.com/ashsii/show-emote-kappagen/blob/main/twi.js
   constructor(channelName) {
     this.channelName = channelName;
     this.emotes = [];
@@ -103,10 +103,9 @@ class Twi {
 
   useCommands(prefix = "") {
     this.on("message", (message) => {
-      if (message.content.startsWith(prefix)) {
-        const args = message.content.split(" ");
-        const command = args.shift().split(prefix)[1];
-        this.runCommand(command, message, args);
+      const emote = message.emotes[0];
+      if (emote) {
+        spawnEmote(emote);
       }
     });
   }
