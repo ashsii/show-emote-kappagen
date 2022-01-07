@@ -1,4 +1,4 @@
-# Show Emote
+# Show Emote but actually it's an Emote wall / KappaGen
 
 Twitch widget that is kappagen, very lidl
 
