@@ -1,6 +1,6 @@
 const twi = Twi.factory();
 
-twi.useCommands("!");
+twi.useCommands("");
 twi.useChat();
 twi.useEmotes();
 
@@ -33,7 +33,7 @@ function spawnEmote(emote) {
   document.getElementById("app").appendChild(sprite);
 }
 
-twi.addCommand("showemote", (message, _args) => {
+twi.addCommand("", (message, _args) => {
   const emote = message.emotes[0];
   if (emote && !showing) {
     spawnEmote(emote);
