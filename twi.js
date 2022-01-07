@@ -1,4 +1,4 @@
-class Twi {https://github.com/ashsii/show-emote-kappagen/blob/main/twi.js
+class Twi {
   constructor(channelName) {
     this.channelName = channelName;
     this.emotes = [];
