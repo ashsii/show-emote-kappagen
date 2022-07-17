@@ -1,5 +1,7 @@
 # Show Emote but actually it's an Emote wall / KappaGen
 
+# Don't use this, use this instead https://github.com/ashsii/Emote-Wall
+
 Twitch widget that is kappagen, very lidl
 
 Auto refreshes when it sees "New 7TV Emote " from auro's bot
